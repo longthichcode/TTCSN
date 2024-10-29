@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Danh mục sản phẩm</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='Category.css'>
+<!-- các gói -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!--font chữ-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src='Category.js'></script>
+</head>
+<body>
+    <header>
+        <!--Menu-->
+        <div class="menu">
+            <li class="nu">
+                <a href="#" style="font-weight: bold;">NỮ</a>
+                <ul class="nu-menu">
+                    <li><a href="" style="color:red;font-weight: bold;">NEW ARRIVAL</a></li>
+                    <li><a href="" style="font-weight: bold;">ROSA CHARM</a></li>
+                    <li><a href="" style="font-weight: bold;">WHISPERS OF AUTUMN</a></li>
+                    <li><a href=""style="font-weight: bold;">MODERN STYLE</a></li>
+                    <li><a href=""style="font-weight: bold;">ETERNAL STYLE</a></li>
+                    <li><a href=""style="font-weight: bold;">ETERNAL ELEGANCE</a></li>
+                    <li><a href=""style="font-weight: bold;">THE DREAMER</a></li>
+                    <li>
+                        <a href=""style="font-weight: bold;">ÁO</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo croptop</a></li>
+                            <li><a href="">Áo peptum</a></li>
+                            <li><a href="">Áo len</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""style="font-weight: bold;">SENORA</a>
+                        <ul>
+                            <li><a href="">Đầm dạ hội</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""style="font-weight: bold;">ÁO KHOÁC</a>
+                        <ul>
+                            <li><a href="">Áo vest/ blazer</a></li>
+                            <li><a href="">Áo dạ/ măng tô</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""style="font-weight: bold;">SET BỘ</a>
+                        <ul>
+                            <li><a href="">Set bộ công sở</a></li>
+                            <li><a href="">Set bộ co-ords</a></li>
+                            <li><a href="">Set bộ thun/ len</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""style="font-weight: bold;">QUẦN & JUMPSUIT</a>
+                        <ul>
+                            <li><a href="">Quần dài</a></li>
+                            <li><a href="">Quần jeans</a></li>
+                            <li><a href="">Quần lửng/ short</a></li>
+                            <li><a href="">Jumpsuit</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href=""style="font-weight: bold;">CHÂN VÁY</a>
+                        <ul>
+                            <li><a href="">Chân váy bút chì</a></li>
+                            <li><a href="">Chân váy chữ A</a></li>
+                            <li><a href="">Chân váy jeans</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""style="font-weight: bold;">ĐẦM/ ÁO DÀI</a>
+                        <ul>
+                            <li><a href="">Váy đầm nữ</a></li>
+                            <li><a href="">Đầm công sở</a></li>
+                            <li><a href="">Đầm voan hoa/ maxi</a></li>
+                            <li><a href="">Đầm thun</a></li>
+                            <li><a href="">Áo dài</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nam">
+                <a href="#" style="font-weight: bold;">NAM</a>
+                <ul class="nam-menu">
+                    <li><a href=""style="font-weight: bold;">NEW ARRIVALS</a></li>
+                    <li>
+                        <a href=""style="font-weight: bold;">ÁO</a>
+                        <ul>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo polo</a></li>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo khoác/ vest</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""style="font-weight: bold;">QUẦN NAM</a>
+                        <ul>
+                            <li><a href="">Quần lửng/ short</a></li>
+                            <li><a href="">Quần dài</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""style="font-weight: bold;">PHỤ KIỆN</a>
+                        <ul>
+                            <li><a href="">Phụ kiện</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="children">
+                <a href="#" style="font-weight: bold;">TRẺ EM</a>
+                <ul class="children-menu">
+                    <li><a href=""  style="font-weight: bold;">NEW ARRIVALS</a></li>
+                    <li>
+                        <a href=""  style="font-weight: bold;">BÉ GÁI</a>
+                        <ul>
+                            <li><a href="">Áo bé gái</a></li>
+                            <li><a href="">Quần bé gái</a></li>
+                            <li><a href="">Chân váy bé gái</a></li>
+                            <li><a href="">Phụ kiện bé gái</a></li>
+                            <li><a href="">Váy bé gái</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""  style="font-weight: bold;">BÉ TRAI</a>
+                        <ul>
+                            <li><a href="">Áo bé trai</a></li>
+                            <li><a href="">Quần bé trai</a></li>
+                            <li><a href="">Phụ kiện bé trai</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""  style="font-weight: bold;">ÁO KHOÁC</a></li>
+                </ul>
+            </li>
+            <li class="sale">
+                <a href="#" style="font-weight: bold;color:red">SIÊU SALE T10</a>
+                <ul class="sale-menu">
+                    <li>
+                        <a href="" style="font-weight: bold;">SALE UP TO 50%</a>
+                        <ul>
+                            <li><a href="">Áo</a></li>
+                            <li><a href="">Đầm</a></li>
+                            <li><a href="">Chân váy</a></li>
+                            <li><a href="">Quần</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="coll">
+                <a href="#" style="font-weight: bold;">BỘ SƯU TẬP</a>
+                <ul class="coll-menu">
+                    <li>
+                        <a href="" style="font-weight: bold;">NỮ</a>
+                        <ul>
+                            <li><a href="">ROSACHARM</a></li>
+                            <li><a href="">WHISPERS OF AUTUMN</a></li>
+                            <li><a href="">THE DREAMER</a></li>
+                            <li><a href="">MODERN STYLE</a></li>
+                            <li><a href="">ETERNAL ELEGANCE</a></li>
+                            <li><a href="">OCEAN JEWELS</a></li>
+                            <li><a href="">URBAN CHIC</a></li>
+                            <li><a href="">ARTISANAL DELICATE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="us">
+                <a href="#" style="font-weight: bold;">VỀ CHÚNG TÔI</a>
+                <ul class="us-menu">
+                    <li><a href="" style="font-weight: bold;">VỀ IVY MODA</a></li>
+                    <li><a href="" style="font-weight: bold;">FASHION SHOW</a></li>
+                    <li><a href="" style="font-weight: bold;">HOẠT ĐỘNG CỘNG ĐỒNG</a></li>
+                </ul>
+            </li>
+        </div>
+        <!--End Menu-->
+        <div class="logo">
+            <a href="#"><img src="Menu-logo.png" width="150px"></a>
+            
+        </div>
+        <div class="others">
+            <li class="search" style="border-left: none;">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </li>
+            
+            <li><a class="fa-solid fa-headphones" href="#"></a></li>
+            <li><a class="fa-solid fa-user" href="#"></a></li>
+            <li><a class="fa-solid fa-bag-shopping" href="#"></a></li>
+        </div>
+    </header>
+    <main>
+        <!--Content-->
+        <div class="category">
+            <div class="category-top">
+                <a href="">Trang chủ </a><span>&#8722;</span>
+            </div>
+            <div class="category-bottom">
+                <div class="category-left">
+                    <div class="category-lt">
+                        <li>
+                            <button class="btn-menu" id="btn-size"><span>Size</span><i class="fa-regular fa-plus"></i></button>
+                            <ul class="catsize-menu" id="catsize-menu">
+                                <li><button class="btn-catsize-menu" id="btn-catsize-S">S</button></li>
+                                <li><button class="btn-catsize-menu" id="btn-catsize-M">M</button></li>
+                                <li><button class="btn-catsize-menu" id="btn-catsize-L">L</button></li>
+                                <li><button class="btn-catsize-menu" id="btn-catsize-XL">XL</button></li>
+                                <li><button class="btn-catsize-menu" id="btn-catsize-XXL">XXL</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="btn-menu" id="btn-color"><span>Màu sắc</span><i class="fa-regular fa-plus"></i></button>
+                            <ul class="color-menu" id="color-menu">
+                                <li><button class="btn-color-menu" id="black"></button></li>
+                                <li><button class="btn-color-menu" id="white"></button></li>
+                                <li><button class="btn-color-menu" id="blue"></button></li>
+                                <li><button class="btn-color-menu" id="yellow"></button></li>
+                                <li><button class="btn-color-menu" id="pink"></button></li>
+                                <li><button class="btn-color-menu" id="red"></button></li>
+                                <li><button class="btn-color-menu" id="gray"></button></li>
+                                <li><button class="btn-color-menu" id="beige"></button></li>
+                                <li><button class="btn-color-menu" id="brown"></button></li>
+                                <li><button class="btn-color-menu" id="green"></button></li>
+                                <li><button class="btn-color-menu" id="orange"></button></li>
+                                <li><button class="btn-color-menu" id="purple"></button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="btn-menu" id="btn-cost"><span>Mức giá</span><i class="fa-regular fa-plus"></i></button>
+                            <select class="cost-menu" name="cost-menu" id="cost-menu">
+                                <option value="500k">0 - 500.000</option>
+                                <option value="1m">500.000 - 1.000.000</option>
+                                <option value="2m">1.000.000 - 2.000.000</option>
+                                <option value="5m">2.000.000 - 5.000.000</option>
+                                <option value="10m">5.000.000 - 10.000.000</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button class="btn-menu" id="btn-discount"><span>Mức chiết khấu</span><i class="fa-regular fa-plus"></i></i></button>
+                            <select class="discount-menu" name="discount-menu" id="discount-menu">
+                                <option value="0per">Dưới 30%</option>
+                                <option value="30per">30% - 50%</option>
+                                <option value="50per">50% - 70%</option>
+                                <option value="70per">Từ 70%</option>
+                                <option value="pre">Giá đặc biệt</option>
+                            </select>
+                        </li>
+                    </div>
+                    <div class="category-lb">
+                        <button class="diselect">BỎ LỌC</button>
+                        <button class="select">LỌC</button>
+                    </div>
+                </div>
+                <div class="category-right">
+                    <div class="category-rt">
+                        <p style="font-weight: bold;font-size: 20px;">Danh mục sản phẩm</p>
+                        <select name="" id="" >
+                            <option value="">Mặc định</option>
+                            <option value="">Mới nhất</option>
+                            <option value="">Được mua nhiều nhất</option>
+                            <option value="">Được thích nhiều nhất</option>
+                            <option value="">Giá cao đến thấp</option>
+                            <option value="">Giá thấp đến cao</option>
+                        </select>
+                    </div>
+                    <div class="category-rb">
+                        <div class="sp">
+                            <img src="sp1_1.png" alt="" class="sp-img">
+                            <div class="sp-content">
+                                <div class="sp-top">
+                                    <div><button class="sp-color">O</button></div>
+                                    <div><i class="fa-regular fa-heart sp-heart"></i></div>
+                                </div>
+                                <a href="#">Đầm A tay Hến</a> 
+                                <div class="sp-bottom">
+                                    <p>1.113.000 <del>1.590.000</del></p>
+                                    <div>
+                                        <button class="sp-shop"><i class="fa-solid fa-bag-shopping"></i></button>
+                                        <select name="sp-select" class="sp-select">
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                            <option value="XXL">XXL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp">
+                            <img src="sp1_1.png" alt="" class="sp-img">
+                            <div class="sp-content">
+                                <div class="sp-top">
+                                    <div><button class="sp-color">O</button></div>
+                                    <div><i class="fa-regular fa-heart sp-heart"></i></div>
+                                </div>
+                                <a href="#">Đầm A tay Hến</a> 
+                                <div class="sp-bottom">
+                                    <p>1.113.000 <del>1.590.000</del></p>
+                                    <div>
+                                        <button class="sp-shop"><i class="fa-solid fa-bag-shopping"></i></button>
+                                        <select name="sp-select" class="sp-select">
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                            <option value="XXL">XXL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp">
+                            <img src="sp1_1.png" alt="" class="sp-img">
+                            <div class="sp-content">
+                                <div class="sp-top">
+                                    <div><button class="sp-color">O</button></div>
+                                    <div><i class="fa-regular fa-heart sp-heart"></i></div>
+                                </div>
+                                <a href="#">Đầm A tay Hến</a> 
+                                <div class="sp-bottom">
+                                    <p>1.113.000 <del>1.590.000</del></p>
+                                    <div>
+                                        <button class="sp-shop"><i class="fa-solid fa-bag-shopping"></i></button>
+                                        <select name="sp-select" class="sp-select">
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                            <option value="XXL">XXL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sp">
+                            <img src="sp1_1.png" alt="" class="sp-img">
+                            <div class="sp-content">
+                                <div class="sp-top">
+                                    <div><button class="sp-color">O</button></div>
+                                    <div><i class="fa-regular fa-heart sp-heart"></i></div>
+                                </div>
+                                <a href="#">Đầm A tay Hến</a> 
+                                <div class="sp-bottom">
+                                    <p>1.113.000 <del>1.590.000</del></p>
+                                    <div>
+                                        <button class="sp-shop"><i class="fa-solid fa-bag-shopping"></i></button>
+                                        <select name="sp-select" class="sp-select">
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                            <option value="XXL">XXL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+
+
+        <!--Foot-->
+        <div class="container-foot">
+            <div class="footer">
+                <div class="left-footer">
+                    <div class="tl-footer">
+                        <a href=""><img src="Menu-logo.png" width="100px"></a>
+                    </div>
+                    <div class="bl-footer">
+                        <div class="media">
+                            <li><a href=""><img src="fb-logo.png"></a></li>
+                            <li><a href=""><img src="gg-logo.png"></a></li>
+                            <li><a href=""><img src="ig-logo.png"></a></li>
+                            <li><a href=""><img src="ps-logo.png"></a></li>
+                            <li><a href=""><img src="yt-logo.png"></a></li>
+                        </div>
+                        <div class="hotline">
+                            <a href="tel:02466623434">Hotline: 0246 662 3434</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-footer">
+                    <li>
+                        <p>Giới thiệu</p>
+                        <ul>
+                            <li><a href="">Về IVY moda</a></li>
+                            <li><a href="">Tuyển dụng</a></li>
+                            <li><a href="">Hệ thống cửa hàng</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Dịch vụ khách hàng</p>
+                        <ul>
+                            <li><a href="">Chính sách điều khoản</a></li>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Chính sách thanh toán</a></li>
+                            <li><a href="">Chính sách đổi trả</a></li>
+                            <li><a href="">Chính sách bảo hành</a></li>
+                            <li><a href="">Chính sách giao nhận vận chuyển</a></li>
+                            <li><a href="">Chính sách thẻ thành</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Liên hệ</p>
+                        <ul>
+                            <li><a href="">Hotline</a></li>
+                            <li><a href="">Email</a></li>
+                            <li><a href="">Live Chat</a></li>
+                            <li><a href="">Messenger</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="right-footer">
+                    <div class="tr-footer">
+                        <p>Nhận thông tin các chương trình của IVY moda</p>
+                        <div class="email-footer">
+                            <input type="email" name="" id="" placeholder="Nhập địa chỉ email">
+                            <button>Đăng kí</button>
+                        </div>
+                    </div>
+                    <div class="br-footer">
+                        <p>Download App</p>
+                        <a href=""><img src="dowload_ios.png" alt=""></a>
+                        <a href=""><img src="dowload_android.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!--End Foot-->
+        </div>
+        
+    </main>
+    <footer>
+        <p>©IVYmoda All rights reserved</p>
+    </footer>
+</body>
+</html>
+op
