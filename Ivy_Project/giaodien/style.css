@@ -1,0 +1,508 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1;
+    background: rgb(255, 255, 255, 0.3);
+}
+
+header:hover {
+    background: rgb(255, 255, 255, 1);
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.menu, .other {
+    list-style: none; /* Loại bỏ dấu chấm */
+    padding: 0; /* Xóa padding mặc định */
+    margin: 0; /* Xóa margin mặc định */
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 10px;
+    position: relative;
+}
+
+
+
+/*-----Menu của Nữ----------*/
+.sub-menu {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 50px;
+    background-color: white;
+    padding: 20px 65px 10px 30px;
+    width: max-content;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu ul {
+    padding-left: 1px;
+}
+
+.sub-menu ul a {
+    font-weight: normal;
+    font-size: 20px;
+}/**/
+
+
+/*-----Menu của Nam----------*/
+.sub-menu-nam {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 60px;
+    background-color: white;
+    padding: 10px 60px 10px 30px;
+    width: max-content;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-nam ul {
+    padding-left: 1px;
+}
+
+.sub-menu-nam ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của trẻ em----------*/
+.sub-menu-treem {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 60px;
+    background-color: white;
+    padding: 10px 60px 10px 30px;
+    width: max-content;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-treem ul {
+    padding-left: 1px;
+}
+
+.sub-menu-treem ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của flash sale----------*/
+.sub-menu-flashsale {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 60px;
+    background-color: white;
+    padding: 10px 100px 10px 10px;
+    width: max-content;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-flashsale ul {
+    padding-left: 1px;
+}
+
+.sub-menu-flashsale ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của hot items----------*/
+.sub-menu-hotitems {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 60px;
+    background-color: white;
+    padding: 10px 45px 10px 10px;
+    width: max-content;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-hotitems ul {
+    padding-left: 1px;
+}
+
+.sub-menu-hotitems ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của bô sưu tập----------*/
+.sub-menu-bosuutap {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 60px;
+    background-color: white;
+    padding: 10px 95px 10px 10px;
+    width: max-content;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-bosuutap ul {
+    padding-left: 1px;
+}
+
+.sub-menu-bosuutap ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+/*-----Menu của thông tin----------*/
+.sub-menu-thongtin {
+    visibility: hidden;
+    position: absolute; /* Giữ nguyên vị trí tuyệt đối */
+    background-color: white; /* Màu nền của sub-menu */
+    border: 1px solid #ccc; /* Đường viền cho sub-menu */
+    top: 60px;
+    background-color: white;
+    padding: 10px 110px 10px 10px;
+    width: max-content;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.sub-menu-thongtin ul {
+    padding-left: 1px;
+}
+
+.sub-menu-thongtin ul a {
+    font-weight: normal;
+    font-size: 20px;
+}
+/**/
+
+
+/*-----Menu của Nữ----------*/
+.menu li:hover > .sub-menu {
+    top:40px;
+    visibility: visible;
+    transition: 0.3s;
+}
+/**/
+
+/*-----Menu của Nam----------*/
+.menu li:hover > .sub-menu-nam {
+    top: 40px;
+    visibility: visible;
+    transition: 0.3s;
+}
+/**/
+
+/*-----Menu của trẻ em----------*/
+.menu li:hover > .sub-menu-treem {
+    top: 40px;
+    visibility: visible;
+    transition: 0.3s;
+}
+/**/
+
+/*-----Menu của flash sale----------*/
+.menu li:hover > .sub-menu-flashsale {
+    top: 40px;
+    visibility: visible;
+    transition: 0.3s;
+}
+/**/
+
+/*-----Menu của hotitems----------*/
+.menu li:hover > .sub-menu-hotitems {
+    top: 40px;
+    visibility: visible;
+    transition: 0.3s;
+}
+/**/
+
+/*-----Menu của bộ sưu tập----------*/
+.menu li:hover > .sub-menu-bosuutap {
+    top: 40px;
+    visibility: visible;
+    transition: 0.3s;
+}
+/**/
+
+/*-----Menu của bộ sưu tập----------*/
+.menu li:hover > .sub-menu-thongtin {
+    top: 40px;
+    visibility: visible;
+    transition: 0.3s;
+}
+/**/
+
+.menu li:hover > ul {
+    display: block; /* Hiện cả sub-menu và ul bên trong khi hover */
+}
+
+.menu li ul {
+    display: block; /* Ẩn các ul bên trong */
+}
+
+.menu li ul li {
+    display: block; /* Đặt các li trong sub-menu thành cột */
+    font-size: 22px; /* Tăng kích thước chữ cho các mục trong sub-menu */
+}
+
+.menu li ul li a {
+    padding: 5px 10px; /* Thêm khoảng đệm cho các link trong sub-menu */
+    white-space: nowrap; /* Ngăn không cho chữ bị ngắt dòng */
+}
+
+.menu li a, .other li a {
+    font-size: 16px; /* Tăng kích thước chữ chính */
+    padding: 10px 15px;
+    color: #333;
+    transition: color 0.3s;
+    line-height: 40px;
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-weight: bold; /* Để chữ đậm */
+}
+
+.menu li a:hover {
+    color: #007bff;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.other {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.other img.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.other img.icon:hover {
+    transform: scale(1.1);
+}
+
+.other > li:first-child input {
+    width: 200px; /*--Để chỉnh độ dài ngắn của tìm kiếm---*/
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
+}
+
+.other > li:first-child i {
+    position: absolute;
+    right: 10px;
+}
+
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    width: 200px;
+    height: 40px;
+    padding: 8px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+    font-size: 20px;
+}
+
+.search-container img.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%; /* Tỉ lệ 16:9 */
+    transition: 0.3s;
+}
+
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/*--------------------------app phần cuối trang chủ------------------------*/
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px;
+}
+
+.app-google {
+    margin: 50px;
+    cursor: pointer;
+}
+
+.app-google img {
+    height: 50px;
+        text-decoration: none;
+
+}
+
+.app-container {
+    line-height: 20px; 
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+
+.app-container input {
+    margin-top: 50px; 
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+}
+
+/*--------------------------footer------------------------*/
+footer {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-top {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 7px;
+    font-size: 25px;
+}
+
+
+.footer-top img {
+    height: 40px;
+    
+}
+
+.footer-top li {
+    padding: 0 12px;
+    position: relative;
+        text-decoration: none;
+
+}
+
+.footer-top li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #cccccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-top li:last-child::after {
+    text-decoration: none;
+    display: none;
+}
+
+.footer-top li:last-child a {
+    margin-right: 12px;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin: 20px 0 ;
+}
+
+.footer-center {
+    text-align: center;
+    font-size: 22px;
+}
